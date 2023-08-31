@@ -5,3 +5,25 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari
 (usando una funzione) Dichiariamo chi ha vinto.
 */
 
+const userChoice = prompt("pari o dispari?");
+const userNumber = Number(prompt("Scegli un numero da 1 a 5"));
+
+let randomNumber = Math.floor(Math.random() * 5) + 1;
+console.log("La CPU sceglie " + randomNumber);
+
+
+
+
+
+let sum = userNumber + randomNumber;
+console.log("Il totale è " + sum);
+
+if (sum % 2 === 0 && userChoice === "pari") {
+    console.log('Pari, hai vinto');
+} else if (sum % 2 === 0 && userChoice === "dispari") {
+    console.log("Pari, vince la CPU");
+} else if (sum % 2 !== 0 && userChoice === "pari") {
+    console.log("Dispari, vince la CPU");
+} else if (sum % 2 !== 0 && userChoice === "dispari") {
+    console.log("Dispari, hai vinto!");
+}
