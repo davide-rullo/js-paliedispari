@@ -21,6 +21,7 @@ console.log("La CPU sceglie " + CPUNumber);
 let sum = userNumber + CPUNumber;
 console.log("Il totale è " + sum);
 
+function evenOrOdd(){
 if (sum % 2 === 0 && userChoice === "pari") {
     console.log('Pari, hai vinto');
 } else if (sum % 2 === 0 && userChoice === "dispari") {
@@ -30,3 +31,6 @@ if (sum % 2 === 0 && userChoice === "pari") {
 } else if (sum % 2 !== 0 && userChoice === "dispari") {
     console.log("Dispari, hai vinto!");
 } 
+}
+
+evenOrOdd();
